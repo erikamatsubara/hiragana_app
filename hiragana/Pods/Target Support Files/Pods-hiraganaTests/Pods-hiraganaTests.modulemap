@@ -1,0 +1,6 @@
+framework module Pods_hiraganaTests {
+  umbrella header "Pods-hiraganaTests-umbrella.h"
+
+  export *
+  module * { export * }
+}
