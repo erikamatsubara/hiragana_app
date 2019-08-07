@@ -16,6 +16,34 @@ struct R: Rswift.Validatable {
     try intern.validate()
   }
   
+  /// This `R.color` struct is generated, and contains static references to 1 colors.
+  struct color {
+    /// Color `MainColor`.
+    static let mainColor = Rswift.ColorResource(bundle: R.hostingBundle, name: "MainColor")
+    
+    /// `UIColor(named: "MainColor", bundle: ..., traitCollection: ...)`
+    @available(tvOS 11.0, *)
+    @available(iOS 11.0, *)
+    static func mainColor(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIColor? {
+      return UIKit.UIColor(resource: R.color.mainColor, compatibleWith: traitCollection)
+    }
+    
+    fileprivate init() {}
+  }
+  
+  /// This `R.image` struct is generated, and contains static references to 1 images.
+  struct image {
+    /// Image `Arrow`.
+    static let arrow = Rswift.ImageResource(bundle: R.hostingBundle, name: "Arrow")
+    
+    /// `UIImage(named: "Arrow", bundle: ..., traitCollection: ...)`
+    static func arrow(compatibleWith traitCollection: UIKit.UITraitCollection? = nil) -> UIKit.UIImage? {
+      return UIKit.UIImage(resource: R.image.arrow, compatibleWith: traitCollection)
+    }
+    
+    fileprivate init() {}
+  }
+  
   /// This `R.storyboard` struct is generated, and contains static references to 2 storyboards.
   struct storyboard {
     /// Storyboard `LaunchScreen`.
