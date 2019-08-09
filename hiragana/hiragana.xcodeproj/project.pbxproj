@@ -16,8 +16,13 @@
 		5450325322FAA65400C260DB /* hiraganaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450325222FAA65400C260DB /* hiraganaTests.swift */; };
 		5450325E22FAA65400C260DB /* hiraganaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450325D22FAA65400C260DB /* hiraganaUITests.swift */; };
 		546C75FF22FBDEBA0070D3B7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C75FE22FBDEBA0070D3B7 /* UIViewControllerExtension.swift */; };
+		546C760122FBF46C0070D3B7 /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760022FBF46C0070D3B7 /* HttpStatusCode.swift */; };
+		546C760322FC112D0070D3B7 /* HttpConnectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760222FC112D0070D3B7 /* HttpConnectionConfig.swift */; };
+		546C760522FC148F0070D3B7 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760422FC148F0070D3B7 /* RequestMethod.swift */; };
 		54F418A622FABC850047D943 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418A522FABC840047D943 /* R.generated.swift */; };
 		54F418A822FABF790047D943 /* ui.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F418A722FABF790047D943 /* ui.strings */; };
+		54F418B022FAD4660047D943 /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418AF22FAD4660047D943 /* HttpConnection.swift */; };
+		54F418B222FAD48E0047D943 /* HttpConnectionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418B122FAD48E0047D943 /* HttpConnectionDelegate.swift */; };
 		54F418B622FADD230047D943 /* JsonUtility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418B522FADD230047D943 /* JsonUtility.swift */; };
 		5DF8406337DA842871B54251 /* Pods_hiraganaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DEA5509AF99CACC3348DD /* Pods_hiraganaUITests.framework */; };
 		C01A8341525CD2F6E92BB14B /* Pods_hiraganaTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9DC3DAF8DB7852C6830F11DD /* Pods_hiraganaTests.framework */; };
@@ -56,8 +61,13 @@
 		5450325D22FAA65400C260DB /* hiraganaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiraganaUITests.swift; sourceTree = "<group>"; };
 		5450325F22FAA65400C260DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		546C75FE22FBDEBA0070D3B7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
+		546C760022FBF46C0070D3B7 /* HttpStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatusCode.swift; sourceTree = "<group>"; };
+		546C760222FC112D0070D3B7 /* HttpConnectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpConnectionConfig.swift; sourceTree = "<group>"; };
+		546C760422FC148F0070D3B7 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
 		54F418A522FABC840047D943 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		54F418A722FABF790047D943 /* ui.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ui.strings; sourceTree = "<group>"; };
+		54F418AF22FAD4660047D943 /* HttpConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpConnection.swift; sourceTree = "<group>"; };
+		54F418B122FAD48E0047D943 /* HttpConnectionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpConnectionDelegate.swift; sourceTree = "<group>"; };
 		54F418B522FADD230047D943 /* JsonUtility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JsonUtility.swift; sourceTree = "<group>"; };
 		6D8DEA5509AF99CACC3348DD /* Pods_hiraganaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hiraganaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		709AAA6F1D71AE5DAF1F4C31 /* Pods-hiraganaTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-hiraganaTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-hiraganaTests/Pods-hiraganaTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -178,7 +188,12 @@
 		54F418AE22FAD42F0047D943 /* HttpConnection */ = {
 			isa = PBXGroup;
 			children = (
+				54F418AF22FAD4660047D943 /* HttpConnection.swift */,
+				54F418B122FAD48E0047D943 /* HttpConnectionDelegate.swift */,
+				546C760222FC112D0070D3B7 /* HttpConnectionConfig.swift */,
 				54F418B522FADD230047D943 /* JsonUtility.swift */,
+				546C760422FC148F0070D3B7 /* RequestMethod.swift */,
+				546C760022FBF46C0070D3B7 /* HttpStatusCode.swift */,
 			);
 			path = HttpConnection;
 			sourceTree = "<group>";
@@ -440,11 +455,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				54F418B222FAD48E0047D943 /* HttpConnectionDelegate.swift in Sources */,
 				5450324022FAA65300C260DB /* ViewController.swift in Sources */,
 				5450323E22FAA65300C260DB /* AppDelegate.swift in Sources */,
 				546C75FF22FBDEBA0070D3B7 /* UIViewControllerExtension.swift in Sources */,
+				546C760322FC112D0070D3B7 /* HttpConnectionConfig.swift in Sources */,
 				54F418A622FABC850047D943 /* R.generated.swift in Sources */,
 				54F418B622FADD230047D943 /* JsonUtility.swift in Sources */,
+				546C760122FBF46C0070D3B7 /* HttpStatusCode.swift in Sources */,
+				546C760522FC148F0070D3B7 /* RequestMethod.swift in Sources */,
+				54F418B022FAD4660047D943 /* HttpConnection.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
