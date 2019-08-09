@@ -19,6 +19,9 @@
 		546C760122FBF46C0070D3B7 /* HttpStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760022FBF46C0070D3B7 /* HttpStatusCode.swift */; };
 		546C760322FC112D0070D3B7 /* HttpConnectionConfig.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760222FC112D0070D3B7 /* HttpConnectionConfig.swift */; };
 		546C760522FC148F0070D3B7 /* RequestMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760422FC148F0070D3B7 /* RequestMethod.swift */; };
+		546C760A22FD386D0070D3B7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760922FD386D0070D3B7 /* RoundedButton.swift */; };
+		546C760C22FD3C4E0070D3B7 /* RoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760B22FD3C4E0070D3B7 /* RoundedTextView.swift */; };
+		546C760E22FD44700070D3B7 /* AsyncLoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760D22FD44700070D3B7 /* AsyncLoadImageView.swift */; };
 		54F418A622FABC850047D943 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418A522FABC840047D943 /* R.generated.swift */; };
 		54F418A822FABF790047D943 /* ui.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F418A722FABF790047D943 /* ui.strings */; };
 		54F418B022FAD4660047D943 /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418AF22FAD4660047D943 /* HttpConnection.swift */; };
@@ -64,6 +67,9 @@
 		546C760022FBF46C0070D3B7 /* HttpStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpStatusCode.swift; sourceTree = "<group>"; };
 		546C760222FC112D0070D3B7 /* HttpConnectionConfig.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpConnectionConfig.swift; sourceTree = "<group>"; };
 		546C760422FC148F0070D3B7 /* RequestMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestMethod.swift; sourceTree = "<group>"; };
+		546C760922FD386D0070D3B7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
+		546C760B22FD3C4E0070D3B7 /* RoundedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
+		546C760D22FD44700070D3B7 /* AsyncLoadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLoadImageView.swift; sourceTree = "<group>"; };
 		54F418A522FABC840047D943 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		54F418A722FABF790047D943 /* ui.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ui.strings; sourceTree = "<group>"; };
 		54F418AF22FAD4660047D943 /* HttpConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpConnection.swift; sourceTree = "<group>"; };
@@ -155,6 +161,7 @@
 				54F418A722FABF790047D943 /* ui.strings */,
 				54F418AE22FAD42F0047D943 /* HttpConnection */,
 				546C75FD22FBDEA60070D3B7 /* Extension */,
+				546C760822FD38470070D3B7 /* UI */,
 			);
 			path = hiragana;
 			sourceTree = "<group>";
@@ -183,6 +190,16 @@
 				546C75FE22FBDEBA0070D3B7 /* UIViewControllerExtension.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		546C760822FD38470070D3B7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				546C760922FD386D0070D3B7 /* RoundedButton.swift */,
+				546C760B22FD3C4E0070D3B7 /* RoundedTextView.swift */,
+				546C760D22FD44700070D3B7 /* AsyncLoadImageView.swift */,
+			);
+			path = UI;
 			sourceTree = "<group>";
 		};
 		54F418AE22FAD42F0047D943 /* HttpConnection */ = {
@@ -456,11 +473,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F418B222FAD48E0047D943 /* HttpConnectionDelegate.swift in Sources */,
+				546C760C22FD3C4E0070D3B7 /* RoundedTextView.swift in Sources */,
 				5450324022FAA65300C260DB /* ViewController.swift in Sources */,
+				546C760E22FD44700070D3B7 /* AsyncLoadImageView.swift in Sources */,
 				5450323E22FAA65300C260DB /* AppDelegate.swift in Sources */,
 				546C75FF22FBDEBA0070D3B7 /* UIViewControllerExtension.swift in Sources */,
 				546C760322FC112D0070D3B7 /* HttpConnectionConfig.swift in Sources */,
 				54F418A622FABC850047D943 /* R.generated.swift in Sources */,
+				546C760A22FD386D0070D3B7 /* RoundedButton.swift in Sources */,
 				54F418B622FADD230047D943 /* JsonUtility.swift in Sources */,
 				546C760122FBF46C0070D3B7 /* HttpStatusCode.swift in Sources */,
 				546C760522FC148F0070D3B7 /* RequestMethod.swift in Sources */,
