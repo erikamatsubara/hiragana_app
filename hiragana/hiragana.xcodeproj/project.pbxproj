@@ -15,6 +15,7 @@
 		5450324822FAA65400C260DB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5450324622FAA65400C260DB /* LaunchScreen.storyboard */; };
 		5450325322FAA65400C260DB /* hiraganaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450325222FAA65400C260DB /* hiraganaTests.swift */; };
 		5450325E22FAA65400C260DB /* hiraganaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5450325D22FAA65400C260DB /* hiraganaUITests.swift */; };
+		546C75FF22FBDEBA0070D3B7 /* UIViewControllerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C75FE22FBDEBA0070D3B7 /* UIViewControllerExtension.swift */; };
 		54F418A622FABC850047D943 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418A522FABC840047D943 /* R.generated.swift */; };
 		54F418A822FABF790047D943 /* ui.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F418A722FABF790047D943 /* ui.strings */; };
 		5DF8406337DA842871B54251 /* Pods_hiraganaUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6D8DEA5509AF99CACC3348DD /* Pods_hiraganaUITests.framework */; };
@@ -53,6 +54,7 @@
 		5450325922FAA65400C260DB /* hiraganaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = hiraganaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5450325D22FAA65400C260DB /* hiraganaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = hiraganaUITests.swift; sourceTree = "<group>"; };
 		5450325F22FAA65400C260DB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		546C75FE22FBDEBA0070D3B7 /* UIViewControllerExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIViewControllerExtension.swift; sourceTree = "<group>"; };
 		54F418A522FABC840047D943 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		54F418A722FABF790047D943 /* ui.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ui.strings; sourceTree = "<group>"; };
 		6D8DEA5509AF99CACC3348DD /* Pods_hiraganaUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_hiraganaUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -139,6 +141,7 @@
 				54F418A522FABC840047D943 /* R.generated.swift */,
 				5450324922FAA65400C260DB /* Info.plist */,
 				54F418A722FABF790047D943 /* ui.strings */,
+				546C75FD22FBDEA60070D3B7 /* Extension */,
 			);
 			path = hiragana;
 			sourceTree = "<group>";
@@ -159,6 +162,14 @@
 				5450325F22FAA65400C260DB /* Info.plist */,
 			);
 			path = hiraganaUITests;
+			sourceTree = "<group>";
+		};
+		546C75FD22FBDEA60070D3B7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				546C75FE22FBDEBA0070D3B7 /* UIViewControllerExtension.swift */,
+			);
+			path = Extension;
 			sourceTree = "<group>";
 		};
 		753317E88118063439472512 /* Frameworks */ = {
@@ -420,6 +431,7 @@
 			files = (
 				5450324022FAA65300C260DB /* ViewController.swift in Sources */,
 				5450323E22FAA65300C260DB /* AppDelegate.swift in Sources */,
+				546C75FF22FBDEBA0070D3B7 /* UIViewControllerExtension.swift in Sources */,
 				54F418A622FABC850047D943 /* R.generated.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
