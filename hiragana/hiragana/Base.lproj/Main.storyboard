@@ -102,16 +102,19 @@
                                     <constraint firstAttribute="width" secondItem="Zbl-xz-pgL" secondAttribute="height" multiplier="3:5" id="gjB-VI-f0o"/>
                                 </constraints>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gQf-M5-Gqr" userLabel="gooLogo">
-                                <rect key="frame" x="290" y="800" width="124" height="62"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="gQf-M5-Gqr" userLabel="gooLogo" customClass="AsyncLoadImageView" customModule="hiragana" customModuleProvider="target">
+                                <rect key="frame" x="248.5" y="800" width="124" height="62"/>
                                 <constraints>
                                     <constraint firstAttribute="width" secondItem="gQf-M5-Gqr" secondAttribute="height" multiplier="2:1" id="pEo-xe-UMQ"/>
                                 </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="loadURL" value="https://u.xgoo.jp/img/sgoo.png"/>
+                                </userDefinedRuntimeAttributes>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="gQf-M5-Gqr" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="L54-uV-OVv"/>
+                            <constraint firstItem="gQf-M5-Gqr" firstAttribute="trailing" secondItem="Zbl-xz-pgL" secondAttribute="trailing" id="L54-uV-OVv"/>
                             <constraint firstItem="gQf-M5-Gqr" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.3" id="cVi-E1-qtQ"/>
                             <constraint firstItem="Zbl-xz-pgL" firstAttribute="width" secondItem="6Tk-OE-BBY" secondAttribute="width" multiplier="0.8" id="dyy-Dh-zL2"/>
                             <constraint firstItem="Zbl-xz-pgL" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="g9s-Wr-KjQ"/>
