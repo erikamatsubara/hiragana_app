@@ -64,16 +64,78 @@ struct R: Rswift.Validatable {
     fileprivate init() {}
   }
   
-  /// This `R.string` struct is generated, and contains static references to 1 localization tables.
+  /// This `R.string` struct is generated, and contains static references to 2 localization tables.
   struct string {
-    /// This `R.string.ui` struct is generated, and contains static references to 1 localization keys.
+    /// This `R.string.conf` struct is generated, and contains static references to 3 localization keys.
+    struct conf {
+      /// Value: f6ddb2822e2f9ba4939976ea1f65c7cd222913ed2cdb1cd11fa9533b7970ff09
+      static let app_id = Rswift.StringResource(key: "app_id", tableName: "conf", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: hiragana
+      static let output_type = Rswift.StringResource(key: "output_type", tableName: "conf", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: https://labs.goo.ne.jp/api/hiragana
+      static let api_url = Rswift.StringResource(key: "api_url", tableName: "conf", bundle: R.hostingBundle, locales: [], comment: nil)
+      
+      /// Value: f6ddb2822e2f9ba4939976ea1f65c7cd222913ed2cdb1cd11fa9533b7970ff09
+      static func app_id(_: Void = ()) -> String {
+        return NSLocalizedString("app_id", tableName: "conf", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: hiragana
+      static func output_type(_: Void = ()) -> String {
+        return NSLocalizedString("output_type", tableName: "conf", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: https://labs.goo.ne.jp/api/hiragana
+      static func api_url(_: Void = ()) -> String {
+        return NSLocalizedString("api_url", tableName: "conf", bundle: R.hostingBundle, comment: "")
+      }
+      
+      fileprivate init() {}
+    }
+    
+    /// This `R.string.ui` struct is generated, and contains static references to 6 localization keys.
     struct ui {
       /// Value: OK
       static let btn_ok = Rswift.StringResource(key: "btn_ok", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: リトライします
+      static let retry_confirm = Rswift.StringResource(key: "retry_confirm", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 入力された文字が無効です
+      static let input_validation = Rswift.StringResource(key: "input_validation", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 時間をおいて再度お試しください
+      static let take_time = Rswift.StringResource(key: "take_time", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 記号以外の文字を 1文字以上入力してください
+      static let input_letters = Rswift.StringResource(key: "input_letters", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
+      /// Value: 通信に失敗しました
+      static let connection_failure = Rswift.StringResource(key: "connection_failure", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
       
       /// Value: OK
       static func btn_ok(_: Void = ()) -> String {
         return NSLocalizedString("btn_ok", tableName: "ui", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: リトライします
+      static func retry_confirm(_: Void = ()) -> String {
+        return NSLocalizedString("retry_confirm", tableName: "ui", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: 入力された文字が無効です
+      static func input_validation(_: Void = ()) -> String {
+        return NSLocalizedString("input_validation", tableName: "ui", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: 時間をおいて再度お試しください
+      static func take_time(_: Void = ()) -> String {
+        return NSLocalizedString("take_time", tableName: "ui", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: 記号以外の文字を 1文字以上入力してください
+      static func input_letters(_: Void = ()) -> String {
+        return NSLocalizedString("input_letters", tableName: "ui", bundle: R.hostingBundle, comment: "")
+      }
+      
+      /// Value: 通信に失敗しました
+      static func connection_failure(_: Void = ()) -> String {
+        return NSLocalizedString("connection_failure", tableName: "ui", bundle: R.hostingBundle, comment: "")
       }
       
       fileprivate init() {}

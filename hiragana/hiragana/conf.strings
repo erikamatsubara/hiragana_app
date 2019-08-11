@@ -1,0 +1,11 @@
+/* 
+  conf.strings
+  hiragana
+
+  Created by 松原えりか on 2019/08/09.
+  Copyright © 2019 松原えりか. All rights reserved.
+*/
+
+"api_url" = "https://labs.goo.ne.jp/api/hiragana";
+"app_id" = "f6ddb2822e2f9ba4939976ea1f65c7cd222913ed2cdb1cd11fa9533b7970ff09";
+"output_type" = "hiragana";

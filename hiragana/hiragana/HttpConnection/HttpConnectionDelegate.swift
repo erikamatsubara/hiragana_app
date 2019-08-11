@@ -31,7 +31,7 @@ protocol HttpConnectionDelegate {
     /// 必ず実装が必要.
     ///
     /// - Parameter response: オブジェクトに変換したレスポンス.
-    func onSuccess<T: Codable>(response: T)
+    func onSuccess(response: Codable)
     
     /// 通信実行後処理（失敗でも成功でも実行される）.
     /// デフォルトはログを吐くのみ.

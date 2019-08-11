@@ -22,6 +22,9 @@
 		546C760A22FD386D0070D3B7 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760922FD386D0070D3B7 /* RoundedButton.swift */; };
 		546C760C22FD3C4E0070D3B7 /* RoundedTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760B22FD3C4E0070D3B7 /* RoundedTextView.swift */; };
 		546C760E22FD44700070D3B7 /* AsyncLoadImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760D22FD44700070D3B7 /* AsyncLoadImageView.swift */; };
+		546C761022FD4BCA0070D3B7 /* RequestObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C760F22FD4BCA0070D3B7 /* RequestObject.swift */; };
+		546C761422FD4CC80070D3B7 /* conf.strings in Resources */ = {isa = PBXBuildFile; fileRef = 546C761322FD4CC80070D3B7 /* conf.strings */; };
+		546C761622FD4EA20070D3B7 /* ResponseObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = 546C761522FD4EA20070D3B7 /* ResponseObject.swift */; };
 		54F418A622FABC850047D943 /* R.generated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418A522FABC840047D943 /* R.generated.swift */; };
 		54F418A822FABF790047D943 /* ui.strings in Resources */ = {isa = PBXBuildFile; fileRef = 54F418A722FABF790047D943 /* ui.strings */; };
 		54F418B022FAD4660047D943 /* HttpConnection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 54F418AF22FAD4660047D943 /* HttpConnection.swift */; };
@@ -70,6 +73,9 @@
 		546C760922FD386D0070D3B7 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		546C760B22FD3C4E0070D3B7 /* RoundedTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedTextView.swift; sourceTree = "<group>"; };
 		546C760D22FD44700070D3B7 /* AsyncLoadImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncLoadImageView.swift; sourceTree = "<group>"; };
+		546C760F22FD4BCA0070D3B7 /* RequestObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RequestObject.swift; sourceTree = "<group>"; };
+		546C761322FD4CC80070D3B7 /* conf.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = conf.strings; sourceTree = "<group>"; };
+		546C761522FD4EA20070D3B7 /* ResponseObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseObject.swift; sourceTree = "<group>"; };
 		54F418A522FABC840047D943 /* R.generated.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = R.generated.swift; sourceTree = SOURCE_ROOT; };
 		54F418A722FABF790047D943 /* ui.strings */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; path = ui.strings; sourceTree = "<group>"; };
 		54F418AF22FAD4660047D943 /* HttpConnection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpConnection.swift; sourceTree = "<group>"; };
@@ -153,12 +159,15 @@
 			children = (
 				5450323D22FAA65300C260DB /* AppDelegate.swift */,
 				5450323F22FAA65300C260DB /* ViewController.swift */,
+				546C760F22FD4BCA0070D3B7 /* RequestObject.swift */,
+				546C761522FD4EA20070D3B7 /* ResponseObject.swift */,
 				5450324122FAA65300C260DB /* Main.storyboard */,
 				5450324422FAA65400C260DB /* Assets.xcassets */,
 				5450324622FAA65400C260DB /* LaunchScreen.storyboard */,
 				54F418A522FABC840047D943 /* R.generated.swift */,
 				5450324922FAA65400C260DB /* Info.plist */,
 				54F418A722FABF790047D943 /* ui.strings */,
+				546C761322FD4CC80070D3B7 /* conf.strings */,
 				54F418AE22FAD42F0047D943 /* HttpConnection */,
 				546C75FD22FBDEA60070D3B7 /* Extension */,
 				546C760822FD38470070D3B7 /* UI */,
@@ -335,6 +344,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F418A822FABF790047D943 /* ui.strings in Resources */,
+				546C761422FD4CC80070D3B7 /* conf.strings in Resources */,
 				5450324822FAA65400C260DB /* LaunchScreen.storyboard in Resources */,
 				5450324522FAA65400C260DB /* Assets.xcassets in Resources */,
 				5450324322FAA65300C260DB /* Main.storyboard in Resources */,
@@ -473,6 +483,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				54F418B222FAD48E0047D943 /* HttpConnectionDelegate.swift in Sources */,
+				546C761622FD4EA20070D3B7 /* ResponseObject.swift in Sources */,
 				546C760C22FD3C4E0070D3B7 /* RoundedTextView.swift in Sources */,
 				5450324022FAA65300C260DB /* ViewController.swift in Sources */,
 				546C760E22FD44700070D3B7 /* AsyncLoadImageView.swift in Sources */,
@@ -482,6 +493,7 @@
 				54F418A622FABC850047D943 /* R.generated.swift in Sources */,
 				546C760A22FD386D0070D3B7 /* RoundedButton.swift in Sources */,
 				54F418B622FADD230047D943 /* JsonUtility.swift in Sources */,
+				546C761022FD4BCA0070D3B7 /* RequestObject.swift in Sources */,
 				546C760122FBF46C0070D3B7 /* HttpStatusCode.swift in Sources */,
 				546C760522FC148F0070D3B7 /* RequestMethod.swift in Sources */,
 				54F418B022FAD4660047D943 /* HttpConnection.swift in Sources */,
