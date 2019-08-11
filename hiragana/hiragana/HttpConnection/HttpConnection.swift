@@ -120,6 +120,7 @@ class HttpConnection<T: Codable> {
                 delegate.onSuccess(response: data)
             }
         }
+        retryCount = 0
     }
     
     /// クエリ文字列を作成する.
