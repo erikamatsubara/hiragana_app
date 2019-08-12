@@ -31,6 +31,9 @@ class ViewController: UIViewController {
 
     /// 実行ボタン押下時処理.
     @IBAction func onExecuteButtonTap(_ sender: Any) {
+        // キーボードが出ている場合隠す.
+        inputField.endEditing(true)
+        
         // 入力文字列のバリデーション.
         if !checkInputText() {
             showConfirmAlert(
