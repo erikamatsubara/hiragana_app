@@ -68,6 +68,9 @@
                                                 <real key="value" value="0.044999999999999998"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="onExecuteButtonTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="t8g-Hs-jN3"/>
+                                        </connections>
                                     </button>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Arrow" translatesAutoresizingMaskIntoConstraints="NO" id="Clj-Uc-4n9" userLabel="ArrowImage">
                                         <rect key="frame" x="0.0" y="333" width="331" height="36.5"/>
@@ -75,7 +78,7 @@
                                             <constraint firstAttribute="width" secondItem="Clj-Uc-4n9" secondAttribute="height" multiplier="9:1" id="ngL-UJ-QRd"/>
                                         </constraints>
                                     </imageView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="ここに出力されます" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="thu-bl-n6s" userLabel="OutputField" customClass="RoundedTextView" customModule="hiragana" customModuleProvider="target">
+                                    <textView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" text="ここに出力されます" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="thu-bl-n6s" userLabel="OutputField" customClass="RoundedTextView" customModule="hiragana" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="386.5" width="331" height="165.5"/>
                                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                         <constraints>
@@ -123,6 +126,10 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="inputField" destination="AOk-Ne-15P" id="yWC-Gj-w7o"/>
+                        <outlet property="outputField" destination="thu-bl-n6s" id="sU6-6D-7bh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>

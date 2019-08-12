@@ -25,13 +25,13 @@ protocol HttpConnectionDelegate {
     ///   - error: エラーオブジェクト.
     ///   - retryCount: リトライ回数.
     ///   - retry: リトライ用デリゲート.
-    func onFailure(error: Error, retryCount: Int, retry: () -> Void)
+    func onFailure(error: Error, retryCount: Int, retry: @escaping () -> Void)
     
     /// 通信成功時処理.
     /// 必ず実装が必要.
     ///
     /// - Parameter response: オブジェクトに変換したレスポンス.
-    func onSuccess<T: Codable>(response: T)
+    func onSuccess(response: Codable)
     
     /// 通信実行後処理（失敗でも成功でも実行される）.
     /// デフォルトはログを吐くのみ.
@@ -46,7 +46,7 @@ extension HttpConnectionDelegate {
         print("Start----- URL: \(url.absoluteString)")
     }
     
-    func onFailure(error: Error, retryCount: Int, retry: () -> Void) {
+    func onFailure(error: Error, retryCount: Int, retry: @escaping () -> Void) {
         print(error.localizedDescription)
         if retryCount >= 3 {
             return
