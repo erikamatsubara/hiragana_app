@@ -101,7 +101,7 @@ struct R: Rswift.Validatable {
       static let retry_confirm = Rswift.StringResource(key: "retry_confirm", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 入力された文字が無効です
       static let input_validation = Rswift.StringResource(key: "input_validation", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
-      /// Value: 時間をおいて再度お試しください
+      /// Value: 時間をおき、通信環境の 良いところで再度お試しください
       static let take_time = Rswift.StringResource(key: "take_time", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
       /// Value: 記号以外の文字を 1文字以上入力してください
       static let input_letters = Rswift.StringResource(key: "input_letters", tableName: "ui", bundle: R.hostingBundle, locales: [], comment: nil)
@@ -123,7 +123,7 @@ struct R: Rswift.Validatable {
         return NSLocalizedString("input_validation", tableName: "ui", bundle: R.hostingBundle, comment: "")
       }
       
-      /// Value: 時間をおいて再度お試しください
+      /// Value: 時間をおき、通信環境の 良いところで再度お試しください
       static func take_time(_: Void = ()) -> String {
         return NSLocalizedString("take_time", tableName: "ui", bundle: R.hostingBundle, comment: "")
       }
