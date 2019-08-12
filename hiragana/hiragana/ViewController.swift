@@ -118,7 +118,13 @@ extension ViewController: HttpConnectionDelegate {
             return true
         case NSURLErrorNotConnectedToInternet:
             return true
+        case NSURLErrorTimedOut:
+            return true
         case HttpStatusCode.internalServerError.rawValue:
+            return true
+        case HttpStatusCode.requestTimeout.rawValue:
+            return true
+        case HttpStatusCode.gatewayTimeout.rawValue:
             return true
         default:
             return false
